@@ -11,7 +11,7 @@ public class LoginTests extends BaseTest {
         MakeAppointment makeAppointment = homepage.clickMakeAppointment();
         makeAppointment.setUsername("John Doe");
         makeAppointment.setPassword("ThisIsNotAPassword");
-        AppointmentPage appointmentPage =new AppointmentPage();
+
     }
 
 
