@@ -19,8 +19,9 @@ public class MakeAppointment {
     public void setPassword(String password){
         driver.findElement(passwordField).sendKeys(password);
     }
-    public AppointmentPage AppointmentPage (){
+    public AppointmentPage clickappointmentButton(){
         driver.findElement(LoginField).click();
         return new AppointmentPage(driver);
     }
+
 }
