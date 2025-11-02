@@ -38,9 +38,15 @@ To validate and ensure that the CURA Healthcare system performs accurately by au
 ![Output](confirm.png)
 
 
+## Output
+
+![Output](result.png)
+
+
 
 
  
+
 
 
 
