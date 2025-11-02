@@ -1,7 +1,11 @@
 package Pages;
 
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
 
 public class BookAppointmentPage {
     private WebDriver driver;
@@ -30,5 +34,17 @@ public class BookAppointmentPage {
     public String getcomment(){
         return driver.findElement(comment1).getText();
     }
+    public void clickBookAppointment() {
+        driver.findElement(book1).click();
+    }
 
+
+    public void verifyAppointmentDetails(String expectedFacility,String expectedRedeem,String expectedProgram,String expectedDate,String expectedComment){
+        Assert.assertEquals(getfacility(),expectedFacility,"Facility mismatch!");
+        Assert.assertEquals(getredeem(), expectedRedeem, "Readmission mismatch!");
+        Assert.assertEquals(getprogram(), expectedProgram, "Program mismatch!");
+        Assert.assertEquals(getdate(), expectedDate, "Visit Date mismatch!");
+        Assert.assertEquals(getcomment(), expectedComment, "Comment mismatch!");
+
+    }
 }
