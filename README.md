@@ -26,10 +26,22 @@ To validate and ensure that the CURA Healthcare system performs accurately by au
 
 1.Frontpage
 
-![Output](home.png)
+![Output](homepage.png)
+
+
+2. Make Appointment Page
+
+![Output](makeappointment.png)
+
+3. confirmation page
+
+![Output](confirm.png)
+
+
 
 
  
+
 
 
 
