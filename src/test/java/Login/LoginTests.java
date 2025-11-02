@@ -3,6 +3,8 @@ package Login;
 import Base.BaseTest;
 import Pages.*;
 import com.beust.jcommander.JCommander;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 
@@ -30,6 +32,11 @@ public class LoginTests extends BaseTest {
         BookAppointmentPage confirmationPage = appointmentpage.clickBookAppointmentButton();
 
         confirmationPage.verifyAppointmentDetails(facility, readmission, program, date, comment);
+
+
+
+
+        confirmationPage.clickBookAppointment();
     }
 
 

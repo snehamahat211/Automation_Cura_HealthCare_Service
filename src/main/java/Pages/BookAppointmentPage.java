@@ -4,7 +4,11 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
 
 
 public class BookAppointmentPage {
@@ -35,7 +39,10 @@ public class BookAppointmentPage {
         return driver.findElement(comment1).getText();
     }
     public void clickBookAppointment() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(book1));
         driver.findElement(book1).click();
+        new Homepage(driver);
     }
 
 
@@ -47,4 +54,5 @@ public class BookAppointmentPage {
         Assert.assertEquals(getcomment(), expectedComment, "Comment mismatch!");
 
     }
+
 }
