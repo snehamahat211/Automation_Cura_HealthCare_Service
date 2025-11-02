@@ -40,12 +40,13 @@ To validate and ensure that the CURA Healthcare system performs accurately by au
 
 ## Output
 
-![Output](result.png)
+![Output](Result.png)
 
 
 
 
  
+
 
 
 
