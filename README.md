@@ -1,5 +1,5 @@
 
-  # CURA Healthcare Service Automation Testing using Selenium and TestNG (Small Project)
+  # CURA Healthcare Service Automation Testing using Selenium and TestNG (Small Basic Project)
 
  ## Introduction 
  The CURA Healthcare Service Automation Project automates the process of booking an appointment on the CURA Healthcare website. It checks if all steps — from logging in to confirming the appointment — work correctly.
@@ -46,6 +46,7 @@ To validate and ensure that the CURA Healthcare system performs accurately by au
 
 
  
+
 
 
 
